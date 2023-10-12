@@ -1,0 +1,17 @@
+{
+"manifest_version": 3,
+    "name": "Score Beautifier",
+    "description": "Make a bit change to your important scores, this extension only runs on pages that includes 'kobe-u.ac.jp'. ",
+    "version": "0.0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.ac.jp/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
